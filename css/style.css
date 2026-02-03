@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/****************   Nav Section **********************/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  padding: 1rem;
+}
+
+nav p,
+nav a {
+  color: #fff;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #222;
+  padding: 1rem;
+}
+
+footer a {
+  color: #fff;
+}
+
+/*********** Splash Page ************************/
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  color: #2a4d69;
+}
+
+header img {
+  border-radius: 50%;
+  border: 4px solid #2a4d69;
+}
+
+.address {
+  font-size: 0.9rem;
+}
+
+.tagline {
+  font-style: italic;
+}
+
+/************* Sections ********************/
+hr {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+section h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #2a4d69;
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section ul {
+  list-style-type: square;
+}
+
+section a {
+  color: #2a4d69;
+  text-decoration: none;
+}
+
+section a:hover {
+  color: #4b86b4;
+}
+
+/**************   Projects   *****************/
+.three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .three-col {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
