@@ -133,8 +133,47 @@ section a:hover {
   flex-direction: column;
 }
 
-input,
-textarea {
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
   margin-bottom: 1rem;
+}
+
+.form-group label {
+  width: 100px;
+  margin-right: 1rem;
+  text-align: right;
+}
+
+.form-group input,
+.form-group textarea {
+  flex: 1;
   padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button[type="submit"] {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  background-color: #2a4d69;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #4b86b4;
 }
